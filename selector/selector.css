@@ -1,0 +1,41 @@
+#headingone {
+    background-color: green;
+
+}
+
+.web-design {
+    font-size: 30px;
+    background-color: pink;
+}
+
+li:first-child {
+    background-color: red;
+
+}
+
+li:nth-child(2) {
+    font-weight: bold;
+}
+
+li:nth-child(3) {
+    background-color: aquamarine;
+}
+
+li:last-child {
+    font-size: 30px;
+}
+
+#headingtwo {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#paraone {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* for multiple div */
+/* div:nth-child(1){
+    color: ;
+} */
