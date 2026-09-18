@@ -1,0 +1,28 @@
+/* body{
+            font-family: Arial;
+        } */
+        h1{
+            font-family: Arial;
+            color:red;
+            font-weight: bold;
+        }
+        p{
+            font-family: 'Times New Roman';
+            color: aquamarine;
+            font-weight: bold;
+        }
+        h2{
+            border-color: black;
+            border-style: dotted;
+            border-width: 10px;
+        }
+        ul{
+            border-color: red;
+            border-style: dashed;
+            border-width: 20px;
+        }
+        li{
+            border-color: green;
+            border-style: double;
+            border-width: 10px;
+        }
