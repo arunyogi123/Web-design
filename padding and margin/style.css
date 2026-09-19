@@ -1,0 +1,29 @@
+.parent{
+    background-color:yellow;
+    /* border:2px solid red; */
+    display:inline-block;
+    /* padding:single_value=>all 4 directions */
+    padding:40px;
+    /* padding:a,b;=>top and bottom,b-left and right */
+    padding:40px 80px;
+    /* padding:a,b,c; a=>top, b=>left and right, c=>bottom */
+    padding:40px 80px 40px;
+    /* padding :top right bottom left; */
+    padding:20px 40px 80px 120px;
+    
+    padding-top:20px;
+    padding-right:40px;
+    padding-bottom:80px;
+    padding-left:120px;
+
+
+    margin:20px;
+    margin:40px 80px;
+    margin:20px 40px 80px;
+    margin:20px 40px 80px 120px;
+    margin-top:20px;
+    margin-right:10px;
+    margin-bottom:80px;
+    margin-left:10px;  
+
+}
