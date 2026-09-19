@@ -1,0 +1,22 @@
+#parent{
+    background-color:yellow;
+    padding:30px;
+    border:3 px dashed red;
+}
+
+.child{
+    margin-top:20px;
+    margin: bottom 10px;
+    background-color:green;
+    color:white;
+    padding:20px;
+    border:2px dotted blue;
+}
+
+.grandchild{
+    margin-top:20px;
+    background-color:blue;
+    color:black;
+    padding:30px;
+    border:2px solid black;
+}
