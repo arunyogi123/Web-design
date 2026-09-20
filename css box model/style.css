@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    padding: 20px;
+    border: 10px solid black;
+    margin: 30px;
+    /* box-sizing: content-box; */
+}
