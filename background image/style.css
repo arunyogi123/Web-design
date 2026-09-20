@@ -1,0 +1,21 @@
+#box{
+    background-image: url("https://broadwayinfosys.com/uploads/slider/176536772988704.jpeg");
+    color:red;
+    width: 400px;
+    height: 400px;
+    /* background-size: contain; */
+    /* background-size: 100px auto; */
+    /* background-size: auto 200px; */
+    /* background-size: 50% auto; */
+    /* background-size: 100px 40%; */
+    /* background-size: 20% 200px; */
+    background-size: cover;
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-repeat: repeat-both; */
+    border:3px solid red;
+    /* background-position: top/center/bottom left/center/bottom;; */
+    background-position: bottom right;
+}
