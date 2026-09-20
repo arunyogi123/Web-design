@@ -1,0 +1,9 @@
+#image {
+    background-image: url("image/jerry.png"), url("image/tom.png"), url("image/fence-single.png"), url("image/bg.png");
+    width: 800px;
+    height: 600px;
+    background-size: 150px, 350px, 80px 250px, cover;
+    background-repeat: no-repeat, no-repeat, repeat-x, repeat;
+    background-position: bottom left, center, bottom center, center;
+
+}
