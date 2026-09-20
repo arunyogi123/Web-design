@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+body{
+    background-color: gray;
+}
+section{
+    margin: 80px auto;
+    text-align: center;
+}
+section h1{
+    margin-bottom: 20px;
+}
+h1 span{
+    color: green;
+}
+
+section>p{
+    padding: 20px;
+    width:70%;
+    margin:0 auto 40px;
+    line-height: 1.8;
+}
+
+#parent{
+    display: flex;
+}
+.child{
+    line-height: 1.8;
+    text-align: left;
+    background-color: white;
+    padding: 40px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* justify-content: space-evenly; */
+    
+}
+
+.child h3{
+    padding-bottom: 20px;
+    
+}
