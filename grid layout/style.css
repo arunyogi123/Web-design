@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.children {
+    display: grid;
+    grid-template-columns: 35% 1fr 1fr 1fr;
+    grid-template-rows: 280px 280px;
+    gap: 10px;
+}
+
+h1 {
+    /* grid-column: 1;
+    grid-row: 1; */
+    padding: 20px;
+}
+
+p {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.child img {
+    width: 100%;
+    height: 100%;
+}
