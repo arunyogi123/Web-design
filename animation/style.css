@@ -1,0 +1,56 @@
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name: LeftToRight;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+
+@keyframes LeftToRight{
+    0%{
+        left:0;
+    }
+    50%{
+        left: 100px;
+    }
+    100%{
+        left:0;
+    }
+}
+.fa-arrows-rotate{
+    animation-name: rotate360;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+@keyframes rotate360{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+.hover{
+    animation-name: hover;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    margin-top: 100px;
+}
+@keyframes hover{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
