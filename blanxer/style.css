@@ -1,0 +1,19 @@
+.text-bg-purple{
+    background-color: #ECE8F7;
+    color: #6b26D9;
+}
+.zoom{
+    overflow: hidden;
+}
+.zomm>img{
+    transition: all linear 300ms;
+}
+.zoom:hover>img{
+    transform: scale(1.25);
+}
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    overflow: hidden;
+}
