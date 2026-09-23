@@ -1,0 +1,16 @@
+.accordion-body{
+    background-color: #e1e1f7;
+}
+.accordion-body a:hover{
+    background-color: rgba(11,87,208,0.24);
+}
+.accordion-button:hover{
+    background-color: #efefef;
+}
+.accordion-button:not(.collapsed){
+    background-color: white;
+
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
