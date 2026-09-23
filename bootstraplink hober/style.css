@@ -1,0 +1,15 @@
+.navbar-nav .nav-link:before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition: all linear 300ms;
+}
+
+.navbar-nav .nav-link:hover:before{
+    width: 100%;
+    left: 0;
+}
