@@ -1,0 +1,19 @@
+#box {
+    width: 200px;
+    height: 100vh;
+    background: blue;
+
+    position: fixed;
+    top: 0;
+    left: -200px;
+
+    transition: 0.5s;
+}
+
+#box.show {
+    left: 0;
+}
+
+#box #reset {
+    margin: 20px;
+}
