@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to React</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      ReactDOM.render(
+        <div>
+          <Beverages />
+          <h1>Hello React</h1>
+          <Box />
+          <p>This is a simple React app</p>
+          <Box />
+          <Box />
+          <Beverages />
+          <Beverages />
+          <Beverages />
+        </div>,
+        document.getElementById("root"),
+      );
+
+      function Box() {
+        return (
+          <div className="box-card">
+            <Beverages />
+            This is a Box component.
+          </div>
+        );
+      }
+
+      function Beverages() {
+        return (
+          <ul>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Juice</li>
+          </ul>
+        );
+      }
+    </script>
+  </body>
+</html>
