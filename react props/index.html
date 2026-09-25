@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      ReactDOM.render(
+        <div>
+          <h1>Hello Props</h1>
+          <div className="flex">
+            <Card student="Laxman Shrestha" location="Lalitpur" ward={3} profile="image.png" />
+            <Card student="Sita Thapa" location="Bhaktapur" ward={4} profile="two.png" />
+            <Card student="Ram Thapa" location="Kupondole" ward={7} profile="image.png" />
+          </div>
+        </div>,
+        document.getElementById("root"),
+      );
+
+      function Card(props) {
+        return (
+          <div className="boxCard">
+            <img src={props.profile} width="100" />
+            <br />
+            <b>Name</b>: {props.student}
+            <br />
+            <b>Location</b>: {props.location}
+            <br />
+            <b>Ward No</b>: {props.ward}
+            <br />
+          </div>
+        );
+      }
+    </script>
+  </body>
+</html>

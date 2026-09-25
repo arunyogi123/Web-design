@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Travel Journal</title>
+    <link rel="stylesheet" href="location.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      ReactDOM.render(
+        <div>
+          <Header />
+
+          <main>
+            <Card
+              image="fuji.png"
+              country="JAPAN"
+              location="Mount Fuji"
+              date="12 Jan, 2021 - 24 Jan, 2021"
+              description="Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists."
+            />
+
+            <Card
+              image="opera.jpeg"
+              country="AUSTRALIA"
+              location="Sydney Opera House"
+              date="27 May, 2021 - 8 Jun, 2021"
+              description="The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings."
+            />
+
+            <Card
+              image="geira.png"
+              country="NORWAY"
+              location="Geirangerfjord"
+              date="01 Oct, 2021 - 18 Nov, 2021"
+              description="The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality."
+            />
+          </main>
+
+          <Footer />
+        </div>,
+
+        document.getElementById("root"),
+      );
+
+      function Header() {
+        return (
+          <header>
+            <div className="logo">
+              🌐 <span>my travel journal.</span>
+            </div>
+          </header>
+        );
+      }
+
+      function Card(props) {
+        return (
+          <div className="card">
+            <div className="image-container">
+              <img src={props.image} alt={props.location} />
+            </div>
+
+            <div className="card-info">
+              <div className="country">
+                <span className="pin">📍</span>
+                {props.country}
+
+                <a href="#">View on Google Maps</a>
+              </div>
+
+              <h1>{props.location}</h1>
+
+              <h3>{props.date}</h3>
+
+              <p>{props.description}</p>
+            </div>
+          </div>
+        );
+      }
+
+      function Footer() {
+        return (
+          <footer>
+            Coded with <span>♡</span> by Emanuele Del Monte.
+          </footer>
+        );
+      }
+    </script>
+  </body>
+</html>
