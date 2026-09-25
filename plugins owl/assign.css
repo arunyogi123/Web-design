@@ -1,0 +1,102 @@
+body {
+    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Main box */
+.testimonial {
+    background: white;
+    border-radius: 25px;
+
+    /* smaller box */
+    max-width: 1000px;
+    min-height: 420px;
+
+    margin: 0 auto;
+
+    padding: 45px 70px;
+
+    box-sizing: border-box;
+}
+
+/* Quote icon */
+.testimonial i {
+    font-size: 65px;
+    color: #00aeef;
+
+    margin-bottom: 25px;
+}
+
+/* Testimonial text */
+.testimonial p {
+    font-size: 25px;
+    line-height: 1.55;
+
+    color: #363b43;
+
+    margin: 0 0 35px;
+}
+
+
+/* Person section */
+.person {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* Person image */
+.person img {
+    width: 10%;
+    height: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Name */
+.person h5 {
+    margin: 0 0 7px;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #20242a;
+}
+
+
+/* Course */
+.person span {
+    font-size: 19px;
+    color: #363b43;
+}
+
+
+/* Owl dots */
+.owl-theme .owl-dots {
+    text-align: left;
+
+    max-width: 1000px;
+    margin: 30px auto 0;
+}
+
+
+/* Normal dot */
+.owl-theme .owl-dot span {
+    width: 40px !important;
+    height: 40px !important;
+
+    margin: 5px !important;
+
+    background: #dfe3e8 !important;
+}
+
+
+/* Active dot */
+.owl-theme .owl-dot.active span {
+    width: 65px !important;
+
+    background: #0864c7 !important;
+}
