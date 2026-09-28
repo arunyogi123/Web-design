@@ -1,3 +1,6 @@
+<!-- user sanga input lina ko lagi form chaiyo -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +9,25 @@
     <title>Forms</title>
 </head>
 <body>
+    <!-- Form tag  bhitra input types haru aauxa -->
     <form>
+        <!-- <form action="register.php"></form> will go to this file -->
+
+
+        
+        <!-- string enter garxa  -->
+        <!-- <input type="text"/> --> 
+
+
+        <!-- label tag -->
+         <!-- id=unique identifier (must be only one in a file) also how to declare variable data inside
+          id and for are connected by same fields  we do this same as image reason-->
         <label for ="fullname">Enter your full name:</label><br />
         <input id="fullname" type="text"/>
         <hr />
+
+        <!-- min means cannot be less then the num u gave and vice versa for max i.e range define
+        and steps means how much number to increase -->
         <label for="ward">Enter your ward numebr:</label><br />
         <input id="ward" type="number" min="1" max="100" step="7"/><br />
         <hr />
@@ -19,6 +37,8 @@
         <label for="password">Enter your password:</label><br />
         <input id="password" type="password" /><br />
         <hr />
+
+        <!-- web design and u want to change color and dashboard color picker is useful -->
         <label for ="favcolor">Enter your favourite color:</label><br />
         <input id="favcolor" type="color"/>
         <hr />
@@ -26,16 +46,54 @@
         <input id="CV" type="file" /><br />
         <hr />
         <label for ="msg">Enter your message:</label><br />
+
+        <!-- rows means its height plus textarea helps to increase decrease size -->
         <textarea id="msg" rows="10"></textarea>
         <hr />
 
         <label for="subj">Select your favourite subject:</label><br />
+
+        <!-- it gives the option using select tag
+         multiple helps to select all at once  -->
         <select name="favsubject" id="subj" multiple>
             <option value="Javascript">js</option>
             <option value="Python">py</option>
             <option value="c++">C++</option>
         </select>
         <hr />
+
+
+
+      <!-- There is no for beacuse its not associated with any input its a question -->
+        <label>Choose your subject(s)</label><br>
+    <input type="checkbox" id="p" name="subj" value="phy">
+        <label for="p">Physics</label><br>
+    
+        <input type="checkbox" id="c" name="subj" value="chem">
+        <label for="c">Chemistry</label><br>
+    
+        <input type="checkbox" id="b" name="subj" value="bio">
+        <label for="b">Biology</label>
+ 
+  <hr>
+  
+        <p>Please select your favorite Web language:</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+         <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        
+        <hr>
+        
+
+        <!-- it send the data to server -->
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear Form">
+
+
+
 
     </form>
 </body>
